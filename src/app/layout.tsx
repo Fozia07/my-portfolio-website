@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {Radley, Carlito} from  "next/font/google";
 import "./globals.css";
+import Navbar from "./navbar";
+import Footer from "@/footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+
+const Radley_init = Radley({
+  subsets:["latin"],
+  weight:['400'],
+  variable: "--font-Radley",
+  style:["italic","normal"]
+
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+const Carlito_init = Carlito({
+  subsets:["latin"],
+  variable: "--font-Carlito",
+  weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
@@ -26,9 +31,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${Radley_init.variable} ${Carlito_init.variable} antialiased`}
+      > <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
