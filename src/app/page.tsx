@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Header from "./header";
+import Header from "./component/header";
 import Contactme from "./contact-me/page";
-import About from "./about";
-import Services from "./services";
+import About from "./component/about";
+import Services from "./component/services";
 
 
 export default function Home() {

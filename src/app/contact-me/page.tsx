@@ -15,7 +15,7 @@ function Contactme() {
                  <input type='text' placeholder='First name'></input>
                  <input type='text' placeholder='First name'></input>
                  <textarea typeof='text' placeholder='Message'></textarea>
-                 <Button className='bg-[#4d2d19]'> submit</Button>
+                 <Button variant='default' className='bg-[#4d2d19]'> submit</Button>
               </div>
            </div>
         </div>

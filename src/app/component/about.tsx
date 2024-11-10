@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import figma from '@/app/component/public/tabler_brand-figma.png' 
-import insta from '@/app/component/public/tabler_brand-instagram.png' 
-import linkden from '@/app/component/public/tabler_brand-linkedin.png' 
-import img1 from '@/app/component/public/Rectangle 26 (1).png'
+import figma from '@/app/public/tabler_brand-figma.png' 
+import insta from '@app/public/tabler_brand-instagram.png' 
+import linkden from '@/app/public/tabler_brand-linkedin.png' 
+import img1 from '@/app/public/Rectangle 26 (1).png'
 import { Button } from '@/components/ui/button'
 
 function About() {
@@ -21,7 +21,7 @@ function About() {
        </div>
        <div className=' mr-14 px-6 sm:pr-24 md:pr-28 lg:pr-3 lg:pt-32  '>
        <p className='cartlito text-sm text-left lg:text-base'>I’m <span className='font-bold carlito'>FOZIA MUSTAFA</span>, a passionate Web Developer and Designer committed to transforming ideas into visually stunning and highly functional websites. With a deep understanding of both creative design and technical development, I bridge the gap between aesthetics and functionality, delivering seamless, responsive, and engaging user experiences. Let's bring your vision to life with a website that not only looks great but performs flawlessly.</p>
-         <Button className='bg-[#9b4819] rounded-lg my-5' size={'lg'}>Hire me</Button>
+         <Button variant='default' className='bg-[#9b4819] rounded-lg my-5' size={'lg'}>Hire me</Button>
       </div> 
      </div>
   
