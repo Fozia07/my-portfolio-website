@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {Radley, Carlito} from  "next/font/google";
 import "./globals.css";
 import Navbar from "./component/navbar";
-import Footer from "@/footer";
+import Footer from "@/app/component/footer";
 
 
 const Radley_init = Radley({

@@ -16,14 +16,14 @@ function Services() {
               <div className='bg-[#9b4819] border-solid border-4 border-[#4d2d19] my-3'>
                 <h1 className='text-center carlito italic font-semibold text-xl text-[#f2e1d6]'>web developer</h1>
                 <p className='text-center carlito text-sm '>As a developer, I find myself most captivated by the power and flexibility of 
-                 NEXT.js. I'm always eager to dive into new projects that leverage NEXT.js and 
+                 NEXT.js. I am always eager to dive into new projects that leverage NEXT.js and 
                  discover innovative ways to create fast, scalable, and user-friendly applications.</p>
               
               </div>
               <div className='bg-[#9b4819] border-solid border-4 border-[#4d2d19] my-3'>
                 <h1 className='text-center carlito italic font-semibold text-xl text-[#f2e1d6]'>app developer</h1>
                 <p className='text-center carlito text-sm '>With a focus on user-centric design andcutting-edge technologies, I thrive on 
-                building intuitive and efficient apps that make a postive impact on people's lives. Let's turn ideas into reality and 
+                building intuitive and efficient apps that make a postive impact on peoples lives. Lets turn ideas into reality and 
                 shape the future together.</p>
               
               </div>

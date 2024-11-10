@@ -63,7 +63,7 @@ function Page() {
             <Image src={linkden} alt='' className='opacity-40 hover:opacity-100'></Image>
          </div>
          <div className=' mr-14 px-6 sm:pr-6  lg:pt-32  '>
-         <p className='cartlito text-sm text-left md:text-xl '>I’m <span className='font-bold carlito'>FOZIA MUSTAFA</span>, a passionate Web Developer and Designer committed to transforming ideas into visually stunning and highly functional websites. With a deep understanding of both creative design and technical development, I bridge the gap between aesthetics and functionality, delivering seamless, responsive, and engaging user experiences. Let's bring your vision to life with a website that not only looks great but performs flawlessly.</p>
+         <p className='cartlito text-sm text-left md:text-xl '>I am<span className='font-bold carlito'>FOZIA MUSTAFA</span>, a passionate Web Developer and Designer committed to transforming ideas into visually stunning and highly functional websites. With a deep understanding of both creative design and technical development, I bridge the gap between aesthetics and functionality, delivering seamless, responsive, and engaging user experiences. Lets bring your vision to life with a website that not only looks great but performs flawlessly.</p>
          <Button variant="default">Hire me</Button>
 
         </div> 
