@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import img1 from '@/app/component/public/logos_figma.png'
-import img2 from '@/app/component/public/vscode-icons_file-type-html.png'
-import img3 from '@/app/component/public/devicon_css3.png'
-import img4 from '@/app/component/public/skill-icons_bootstrap.png'
-import img5 from '@/app/component/public/vscode-icons_file-type-js-official.png'
-import img6 from '@/app/component/public/Group.png'
+import img1 from '@/app/public/logos_figma.png'
+import img2 from '@/app/public/vscode-icons_file-type-html.png'
+import img3 from '@/app/public/devicon_css3.png'
+import img4 from '@/app/public/skill-icons_bootstrap.png'
+import img5 from '@/app/public/vscode-icons_file-type-js-official.png'
+import img6 from '@/app/public/Group.png'
 
 function Services() {
   return (

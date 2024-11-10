@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import figma from '@/app/public/tabler_brand-figma.png' 
-import insta from '@app/public/tabler_brand-instagram.png' 
+import insta from '@/app/public/tabler_brand-instagram.png' 
 import linkden from '@/app/public/tabler_brand-linkedin.png' 
 import img1 from '@/app/public/Rectangle 26 (1).png'
 import { Button } from '@/components/ui/button'
