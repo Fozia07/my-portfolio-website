@@ -2,7 +2,7 @@
 import Header from "./component/header";
 import Contactme from "./contact-me/page";
 import About from "./component/about";
-import Services from "./component/services";
+import Service from "./services/page";
 
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <main className="bg-[#f2e1d6] max-w-screen-2xl mx auto">
       <Header/>
       <About/>
-      <Services/>
+      <Service/>
       <Contactme/>
     </main>
   )

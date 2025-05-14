@@ -1,78 +1,102 @@
+import React from 'react';
+import Image from 'next/image';
+import { FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Progress } from '@/components/ui/progress';
 
-import React from 'react'
-import img1 from '@/app/public/Rectangle 26 (1).png'
-import { FacebookIcon, GithubIcon, InstagramIcon, LinkedinIcon } from 'lucide-react'
-import Image from 'next/image'
-import figma from '@/app/public/tabler_brand-figma.png' 
-import insta from '@/app/public/tabler_brand-instagram.png' 
-import linkden from '@/app/public/tabler_brand-linkedin.png' 
-import { Progress } from '@/components/ui/progress'
-import { Button } from "@/components/ui/button"
+import img1 from '@/app/public/Rectangle 26 (1).png';
+import figma from '@/app/public/tabler_brand-figma.png';
+import insta from '@/app/public/tabler_brand-instagram.png';
+import linkden from '@/app/public/tabler_brand-linkedin.png';
 
+const SocialLinks = () => (
+  <div className="flex justify-center gap-6 mt-6">
+    <LinkedinIcon className="w-6 h-6 hover:text-[#f2e1d6] transition" />
+    <FacebookIcon className="w-6 h-6 hover:text-[#f2e1d6] transition" />
+    <InstagramIcon className="w-6 h-6 hover:text-[#f2e1d6] transition" />
+    <GithubIcon className="w-6 h-6 hover:text-[#f2e1d6] transition" />
+  </div>
+);
 
+const SkillBar = ({ skill, value }: { skill: string; value: number }) => (
+  <div>
+    <p className="mb-1">{skill}</p>
+    <Progress value={value} />
+  </div>
+);
 
+const ProfileCard = () => (
+  <div className="bg-[#9b4819] border-4 border-[#4d2d19] rounded-2xl p-6 text-white shadow-lg">
+    <h1 className="text-3xl font-bold italic text-center font-serif">Fozia Mustafa</h1>
+    <p className="text-lg text-center mt-1 font-light">UI/UX Designer & Web Developer</p>
+
+    <ul className="mt-6 space-y-2 bg-[#f2e1d6] text-[#4d2d19] rounded-lg p-4 font-serif">
+      <li>👤 Age: 40</li>
+      <li>🎓 Education: B.Com</li>
+      <li>📍 Address: Karachi, Pakistan</li>
+      <li>💼 Freelancer: Available</li>
+    </ul>
+
+    <SocialLinks />
+
+    <div className="mt-8">
+      <h2 className="text-xl font-semibold underline font-serif mb-2">Languages</h2>
+      <ul className="space-y-1">
+        <li className="bg-[#f2e1d6] text-[#4d2d19] rounded px-3 py-1">English</li>
+        <li className="bg-[#f2e1d6] text-[#4d2d19] rounded px-3 py-1">Urdu</li>
+      </ul>
+    </div>
+
+    <div className="mt-8">
+      <h2 className="text-xl font-semibold underline font-serif mb-4">Skills</h2>
+      <div className="space-y-4">
+        <SkillBar skill="HTML" value={75} />
+        <SkillBar skill="CSS" value={60} />
+        <SkillBar skill="TypeScript" value={70} />
+        <SkillBar skill="Next.js" value={80} />
+      </div>
+    </div>
+  </div>
+);
+
+const AboutSection = () => (
+  <div className="bg-white border-2 border-[#9b4819] rounded-2xl p-6 shadow-md">
+    <div className="space-y-6">
+      <h2 className="font-serif italic text-2xl md:text-4xl font-bold text-[#4d2d19]">
+        Little Bit <br />
+        <span className="text-5xl text-[#9b4819]">About Me</span>
+      </h2>
+
+      <Image
+        src={img1}
+        alt="Fozia Profile"
+        className="rounded-2xl opacity-60 hover:opacity-100 transition duration-500"
+      />
+
+      <div className="flex justify-start gap-6 mt-6">
+        <Image src={figma} alt="Figma" className="w-10 h-10 opacity-40 hover:opacity-100 transition" />
+        <Image src={insta} alt="Instagram" className="w-10 h-10 opacity-40 hover:opacity-100 transition" />
+        <Image src={linkden} alt="LinkedIn" className="w-10 h-10 opacity-40 hover:opacity-100 transition" />
+      </div>
+
+      <p className="text-base md:text-lg text-gray-700 font-sans leading-relaxed">
+        I am <span className="font-bold">Fozia Mustafa</span>, a passionate Web Developer and Designer committed to transforming ideas into visually stunning and highly functional websites. With a deep understanding of both creative design and technical development, I bridge the gap between aesthetics and functionality, delivering seamless, responsive, and engaging user experiences. Lets bring your vision to life with a website that not only looks great but performs flawlessly.
+      </p>
+
+      <Button className="bg-[#9b4819] hover:bg-[#7d3714] text-white mt-4">Hire Me</Button>
+    </div>
+  </div>
+);
 
 function Page() {
   return (
-        
-  <div className='max-w-screen-2xl mx-auto'> 
-    <div className='grid grid-cols-1  md:grid-cols-2 md:gap-0 md:w-1/2'>
-       <div className=' mb-4 pt-3 bg-[#9b4819] border-4 border-solid border-[#4d2d19] rounded-2xl mt-4 md:pt-11 pl-5'>
-          <h1 className='Radley italic font-bold text-xl text-center text-[#f2e1d6] lg:text-2xl'>Fozia Mustafa</h1>
-          <p className='carlito font-semibold text-md text-center text-[#f2e1d6] lg:text-lg'>UI/UX designer and web developer</p>
-          <ul className='mt-8 text-[#4d2d19] Radley mx-3'>
-            <li className='bg-[#f2e1d6] my-3'>Age : 40</li>
-            <li className='bg-[#f2e1d6]  my-3'>Education :B.com</li>
-            <li className='bg-[#f2e1d6] my-3'>Address : Karachi, Pakistan</li>
-            <li className='bg-[#f2e1d6] my-3'>Freelancer :available</li>
-          </ul>
-          <div className='mx-3 my-4 flex gap-4'>
-            <LinkedinIcon className='text-[#170e38] size-4  '/>
-            <FacebookIcon className='text-[#170e38] size-4'/>
-            <InstagramIcon className='text-[#170e38] size-4'/>
-            <GithubIcon className='text-[#170e38] size-4'/>
-          </div>
-          <div>
-            <h2 className=' italic text-xl font-semibold text-[#f2e1d6] underline mt-6'>Language</h2>
-            <li className='bg-[#f2e1d6] my-3 decora'>English</li>
-            <li className='bg-[#f2e1d6]  my-3'>Urdu</li>
-          </div>
-          <div>
-          <h2 className=' italic text-xl font-semibold text-[#f2e1d6] underline mt-6'>Skills</h2>
-          <p className='text-[#f2e1d6] mt-2'>html</p>
-          <Progress value={75}/>
-          <p className='text-[#f2e1d6] mt-2'>css</p>
-          <Progress value={60}/>
-          <p className='text-[#f2e1d6] mt-2'>typescript</p>
-          <Progress value={70}/>
-          <p className='text-[#f2e1d6] mt-2'>next.js</p>
-          <Progress value={80}/>
-         </div>
-       
-       </div>
-       <div className='border-2 border-solid border-[#9b4819] rounded-2xl mt-4 md:w-screen 
-       '>
-       <div className='grid grid-cols-1 sm:mx-18 lg:grid-cols-3 lg:mx-4 lg:mr-96 '>
-         <div className='w-screen'>
-           <h1 className='Radley italic font-bold text-2xl mx-24 my-5 md:text-4xl '>Little bit <br/> <span className='text-6xl'>About me</span></h1>
-           <Image src={img1}alt=''className='rounded-t-3xl opacity-50 my-10 mr-4'></Image>
-         </div>
-         <div className=' grid grid-cols-3 w-32 ml-12  md:mx-16 lg:grid-cols-1 lg:h-3 lg:w-14 lg:ml-40 lg:pt-52'>
-            <Image src={figma} alt='' className='opacity-40 hover:opacity-100'></Image>
-            <Image src={insta} alt='' className='opacity-40 hover:opacity-100'></Image>
-            <Image src={linkden} alt='' className='opacity-40 hover:opacity-100'></Image>
-         </div>
-         <div className=' mr-14 px-6 sm:pr-6  lg:pt-32  '>
-         <p className='cartlito text-sm text-left md:text-xl '>I am<span className='font-bold carlito'>FOZIA MUSTAFA</span>, a passionate Web Developer and Designer committed to transforming ideas into visually stunning and highly functional websites. With a deep understanding of both creative design and technical development, I bridge the gap between aesthetics and functionality, delivering seamless, responsive, and engaging user experiences. Lets bring your vision to life with a website that not only looks great but performs flawlessly.</p>
-         <Button variant="default">Hire me</Button>
-
-        </div> 
-       </div>
-       
+    <div className="max-w-screen-2xl mx-auto px-4 py-10 space-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <ProfileCard />
+        <AboutSection />
       </div>
-      </div> 
     </div>
-  )     
+  );
 }
 
-export default Page
+export default Page;
