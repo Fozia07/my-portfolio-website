@@ -22,8 +22,8 @@ function Header() {
               View My Work
             </a>
             <a
-              href="/72b30753-fd8d-4767-be69-ff2be8765584.pdf"
-              download="Fozia_Mustafa_CV.pdf"
+              href="https://acrobat.adobe.com/id/urn:aaid:sc:ap:4a35bf97-3470-40a9-ae81-d65b1ea885ba"
+              download=""
               className="px-6 py-3 border border-[#9b4819] text-[#9b4819] rounded-xl shadow-md hover:bg-[#9b4819] hover:text-white transition duration-300"
             >
               Download CV

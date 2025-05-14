@@ -20,17 +20,17 @@ function Contactme() {
           <input
             type="text"
             placeholder="First Name"
-            className="p-3 rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
+            className="p-3  lg:w-full  rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
           />
           <input
             type="text"
             placeholder="Last Name"
-            className="p-3 rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
+            className="p-3 lg:w-full  rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
           />
           <textarea
             placeholder="Your Message"
             rows={4}
-            className="p-3 rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
+            className="p-3 lg:w-full rounded-lg bg-white text-black placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-[#4d2d19]"
           />
 
           <Button type="submit" className="bg-[#4d2d19] hover:bg-[#3b2314] text-white font-semibold rounded-md mt-2">
